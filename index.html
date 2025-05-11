@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Download</title>
+    <style>
+        .botao-download {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+        .botao-download:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seu download começará automaticamente...</h1>
+    <a id="autoDownload" href="https://drive.google.com/uc?export=download&id=1ChyXdl-xpRJ7GjE-pX8Lbc7o4aaYiLz3" class="botao-download" download style="display:none;">Download</a>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("autoDownload").click();
+        };
+    </script>
+</body>
+</html>
